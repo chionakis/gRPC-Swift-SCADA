@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4512BAB02CBAD76700F088A8 /* telemetry.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4512BAAF2CBAD76700F088A8 /* telemetry.pb.swift */; };
+		4512BAB12CBAD76700F088A8 /* telemetry.grpc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4512BAAE2CBAD76700F088A8 /* telemetry.grpc.swift */; };
+		4512BACB2CBB101E00F088A8 /* controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4512BACA2CBB101A00F088A8 /* controller.swift */; };
+		4512BB1E2CBD765500F088A8 /* AssoJetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4512BB1D2CBD765200F088A8 /* AssoJetView.swift */; };
+		45140E6B2CAFD525004D0DEE /* SignInWithAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E6A2CAFD51B004D0DEE /* SignInWithAppleView.swift */; };
+		45140E6D2CAFD595004D0DEE /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E6C2CAFD595004D0DEE /* UserManager.swift */; };
+		45140E6F2CAFD617004D0DEE /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E6E2CAFD60F004D0DEE /* MainContentView.swift */; };
+		45140E712CAFD677004D0DEE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E702CAFD677004D0DEE /* DetailView.swift */; };
+		45140E732CAFD683004D0DEE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E722CAFD683004D0DEE /* ProfileView.swift */; };
+		45140E752CAFD68B004D0DEE /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E742CAFD68B004D0DEE /* SubscriptionView.swift */; };
+		45140E822CAFDF75004D0DEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45140E812CAFDF75004D0DEE /* GoogleService-Info.plist */; };
+		45140E912CAFE266004D0DEE /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45140E902CAFE266004D0DEE /* AuthenticationView.swift */; };
+		454388E42CAB1A720057458C /* gRPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454388E32CAB1A6D0057458C /* gRPCService.swift */; };
+		4559047D2CBE75BD0032C3CA /* AJ_IIIv5_skid+TSS.scn in Resources */ = {isa = PBXBuildFile; fileRef = 4559047C2CBE75BD0032C3CA /* AJ_IIIv5_skid+TSS.scn */; };
+		455904802CC020DF0032C3CA /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4559047F2CC020D90032C3CA /* NotificationManager.swift */; };
+		455904822CC020FB0032C3CA /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455904812CC020F40032C3CA /* NotificationDelegate.swift */; };
+		455904842CC0249C0032C3CA /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455904832CC024980032C3CA /* Alarm.swift */; };
+		455904872CC024BD0032C3CA /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455904862CC024B90032C3CA /* AlarmManager.swift */; };
+		4559048B2CC025060032C3CA /* Alarms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4559048A2CC025030032C3CA /* Alarms.swift */; };
+		4559048D2CC026CE0032C3CA /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4559048C2CC026CE0032C3CA /* PersistenceController.swift */; };
+		455904902CC027570032C3CA /* AlarmModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4559048E2CC027570032C3CA /* AlarmModel.xcdatamodeld */; };
+		458BF3C62C9381E8001BD3CA /* telemetry_control_clientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458BF3C52C9381E8001BD3CA /* telemetry_control_clientApp.swift */; };
+		458BF3CA2C9381E9001BD3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458BF3C92C9381E9001BD3CA /* Assets.xcassets */; };
+		458BF3CD2C9381E9001BD3CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 458BF3CC2C9381E9001BD3CA /* Preview Assets.xcassets */; };
+		458BF3D62C938223001BD3CA /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3D52C938223001BD3CA /* SwiftProtobuf */; };
+		458BF3D82C938223001BD3CA /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3D72C938223001BD3CA /* SwiftProtobufPluginLibrary */; };
+		458BF3DA2C938223001BD3CA /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3D92C938223001BD3CA /* protoc-gen-swift */; };
+		458BF3DD2C938272001BD3CA /* CGRPCZlib in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3DC2C938272001BD3CA /* CGRPCZlib */; };
+		458BF3DF2C938272001BD3CA /* GRPC in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3DE2C938272001BD3CA /* GRPC */; };
+		458BF3E12C938272001BD3CA /* GRPCReflectionService in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3E02C938272001BD3CA /* GRPCReflectionService */; };
+		458BF3E32C938272001BD3CA /* _GRPCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3E22C938272001BD3CA /* _GRPCCore */; };
+		458BF3E52C938272001BD3CA /* protoc-gen-grpc-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 458BF3E42C938272001BD3CA /* protoc-gen-grpc-swift */; };
+		458BF3E72C93828F001BD3CA /* telemetry.proto in Sources */ = {isa = PBXBuildFile; fileRef = 458BF3E62C93828F001BD3CA /* telemetry.proto */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4512BAAE2CBAD76700F088A8 /* telemetry.grpc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telemetry.grpc.swift; sourceTree = "<group>"; };
+		4512BAAF2CBAD76700F088A8 /* telemetry.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telemetry.pb.swift; sourceTree = "<group>"; };
+		4512BACA2CBB101A00F088A8 /* controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controller.swift; sourceTree = "<group>"; };
+		4512BB1D2CBD765200F088A8 /* AssoJetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssoJetView.swift; sourceTree = "<group>"; };
+		45140E6A2CAFD51B004D0DEE /* SignInWithAppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleView.swift; sourceTree = "<group>"; };
+		45140E6C2CAFD595004D0DEE /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		45140E6E2CAFD60F004D0DEE /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		45140E702CAFD677004D0DEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		45140E722CAFD683004D0DEE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		45140E742CAFD68B004D0DEE /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
+		45140E812CAFDF75004D0DEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		45140E902CAFE266004D0DEE /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		454388E32CAB1A6D0057458C /* gRPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gRPCService.swift; sourceTree = "<group>"; };
+		4559047C2CBE75BD0032C3CA /* AJ_IIIv5_skid+TSS.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "AJ_IIIv5_skid+TSS.scn"; sourceTree = "<group>"; };
+		4559047F2CC020D90032C3CA /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		455904812CC020F40032C3CA /* NotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		455904832CC024980032C3CA /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		455904862CC024B90032C3CA /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		4559048A2CC025030032C3CA /* Alarms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarms.swift; sourceTree = "<group>"; };
+		4559048C2CC026CE0032C3CA /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		4559048F2CC027570032C3CA /* AlarmModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlarmModel.xcdatamodel; sourceTree = "<group>"; };
+		458BF3C22C9381E8001BD3CA /* telemetry-control-client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "telemetry-control-client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		458BF3C52C9381E8001BD3CA /* telemetry_control_clientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = telemetry_control_clientApp.swift; sourceTree = "<group>"; };
+		458BF3C92C9381E9001BD3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		458BF3CC2C9381E9001BD3CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		458BF3CE2C9381E9001BD3CA /* telemetry_control_client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = telemetry_control_client.entitlements; sourceTree = "<group>"; };
+		458BF3E62C93828F001BD3CA /* telemetry.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = telemetry.proto; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		458BF3BF2C9381E8001BD3CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458BF3D82C938223001BD3CA /* SwiftProtobufPluginLibrary in Frameworks */,
+				458BF3DF2C938272001BD3CA /* GRPC in Frameworks */,
+				458BF3DD2C938272001BD3CA /* CGRPCZlib in Frameworks */,
+				458BF3E12C938272001BD3CA /* GRPCReflectionService in Frameworks */,
+				458BF3E32C938272001BD3CA /* _GRPCCore in Frameworks */,
+				458BF3D62C938223001BD3CA /* SwiftProtobuf in Frameworks */,
+				458BF3E52C938272001BD3CA /* protoc-gen-grpc-swift in Frameworks */,
+				458BF3DA2C938223001BD3CA /* protoc-gen-swift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4512BAB22CBAD83900F088A8 /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				458BF3E62C93828F001BD3CA /* telemetry.proto */,
+				4512BAAF2CBAD76700F088A8 /* telemetry.pb.swift */,
+				4512BAAE2CBAD76700F088A8 /* telemetry.grpc.swift */,
+			);
+			path = proto;
+			sourceTree = "<group>";
+		};
+		4512BACC2CBC2DC400F088A8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				455904882CC024EF0032C3CA /* Alarms */,
+				4512BAD92CBC2F1800F088A8 /* Main */,
+				4512BAD62CBC2EA600F088A8 /* Telemetry */,
+				4512BACD2CBC2DD000F088A8 /* Authentication */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4512BACD2CBC2DD000F088A8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4512BACF2CBC2DF500F088A8 /* ViewModels */,
+				4512BACE2CBC2DE600F088A8 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4512BACE2CBC2DE600F088A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45140E902CAFE266004D0DEE /* AuthenticationView.swift */,
+				45140E6A2CAFD51B004D0DEE /* SignInWithAppleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4512BACF2CBC2DF500F088A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4512BAD02CBC2E4100F088A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				455904852CC024B20032C3CA /* Services */,
+				4559047E2CC020B00032C3CA /* Notifications */,
+				4512BAD52CBC2E8000F088A8 /* Models */,
+				4512BAD22CBC2E6F00F088A8 /* Persistence */,
+				4512BAD12CBC2E4900F088A8 /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4512BAD12CBC2E4900F088A8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				454388E32CAB1A6D0057458C /* gRPCService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4512BAD22CBC2E6F00F088A8 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				4559048C2CC026CE0032C3CA /* PersistenceController.swift */,
+				45140E6C2CAFD595004D0DEE /* UserManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		4512BAD52CBC2E8000F088A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				455904832CC024980032C3CA /* Alarm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4512BAD62CBC2EA600F088A8 /* Telemetry */ = {
+			isa = PBXGroup;
+			children = (
+				4512BAD82CBC2EBA00F088A8 /* ViewModels */,
+				4512BAD72CBC2EB200F088A8 /* Views */,
+			);
+			path = Telemetry;
+			sourceTree = "<group>";
+		};
+		4512BAD72CBC2EB200F088A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4512BB1D2CBD765200F088A8 /* AssoJetView.swift */,
+				45140E742CAFD68B004D0DEE /* SubscriptionView.swift */,
+				45140E702CAFD677004D0DEE /* DetailView.swift */,
+				45140E722CAFD683004D0DEE /* ProfileView.swift */,
+				4512BACA2CBB101A00F088A8 /* controller.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4512BAD82CBC2EBA00F088A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4512BAD92CBC2F1800F088A8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4512BADB2CBC2F2700F088A8 /* ViewModels */,
+				4512BADA2CBC2F1F00F088A8 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4512BADA2CBC2F1F00F088A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45140E6E2CAFD60F004D0DEE /* MainContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4512BADB2CBC2F2700F088A8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4512BADC2CBC2FF800F088A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45140E812CAFDF75004D0DEE /* GoogleService-Info.plist */,
+				458BF3C92C9381E9001BD3CA /* Assets.xcassets */,
+				4559047C2CBE75BD0032C3CA /* AJ_IIIv5_skid+TSS.scn */,
+				458BF3CB2C9381E9001BD3CA /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4512BADD2CBC302D00F088A8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				458BF3C52C9381E8001BD3CA /* telemetry_control_clientApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		45140E8B2CAFE1D9004D0DEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4559048E2CC027570032C3CA /* AlarmModel.xcdatamodeld */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4559047E2CC020B00032C3CA /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				455904812CC020F40032C3CA /* NotificationDelegate.swift */,
+				4559047F2CC020D90032C3CA /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		455904852CC024B20032C3CA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				455904862CC024B90032C3CA /* AlarmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		455904882CC024EF0032C3CA /* Alarms */ = {
+			isa = PBXGroup;
+			children = (
+				455904892CC024FB0032C3CA /* Views */,
+			);
+			path = Alarms;
+			sourceTree = "<group>";
+		};
+		455904892CC024FB0032C3CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4559048A2CC025030032C3CA /* Alarms.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		458BF3B92C9381E8001BD3CA = {
+			isa = PBXGroup;
+			children = (
+				458BF3C42C9381E8001BD3CA /* telemetry-control-client */,
+				45140E8B2CAFE1D9004D0DEE /* Frameworks */,
+				458BF3C32C9381E8001BD3CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		458BF3C32C9381E8001BD3CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				458BF3C22C9381E8001BD3CA /* telemetry-control-client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		458BF3C42C9381E8001BD3CA /* telemetry-control-client */ = {
+			isa = PBXGroup;
+			children = (
+				4512BADD2CBC302D00F088A8 /* App */,
+				4512BADC2CBC2FF800F088A8 /* Resources */,
+				4512BAD02CBC2E4100F088A8 /* Core */,
+				4512BACC2CBC2DC400F088A8 /* Features */,
+				4512BAB22CBAD83900F088A8 /* proto */,
+				458BF3CE2C9381E9001BD3CA /* telemetry_control_client.entitlements */,
+			);
+			path = "telemetry-control-client";
+			sourceTree = "<group>";
+		};
+		458BF3CB2C9381E9001BD3CA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				458BF3CC2C9381E9001BD3CA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		458BF3C12C9381E8001BD3CA /* telemetry-control-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 458BF3D12C9381E9001BD3CA /* Build configuration list for PBXNativeTarget "telemetry-control-client" */;
+			buildPhases = (
+				458BF3BE2C9381E8001BD3CA /* Sources */,
+				458BF3BF2C9381E8001BD3CA /* Frameworks */,
+				458BF3C02C9381E8001BD3CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "telemetry-control-client";
+			packageProductDependencies = (
+				458BF3D52C938223001BD3CA /* SwiftProtobuf */,
+				458BF3D72C938223001BD3CA /* SwiftProtobufPluginLibrary */,
+				458BF3D92C938223001BD3CA /* protoc-gen-swift */,
+				458BF3DC2C938272001BD3CA /* CGRPCZlib */,
+				458BF3DE2C938272001BD3CA /* GRPC */,
+				458BF3E02C938272001BD3CA /* GRPCReflectionService */,
+				458BF3E22C938272001BD3CA /* _GRPCCore */,
+				458BF3E42C938272001BD3CA /* protoc-gen-grpc-swift */,
+			);
+			productName = "telemetry-control-client";
+			productReference = 458BF3C22C9381E8001BD3CA /* telemetry-control-client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		458BF3BA2C9381E8001BD3CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					458BF3C12C9381E8001BD3CA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 458BF3BD2C9381E8001BD3CA /* Build configuration list for PBXProject "telemetry-control-client" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 458BF3B92C9381E8001BD3CA;
+			packageReferences = (
+				458BF3D42C938223001BD3CA /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */,
+			);
+			productRefGroup = 458BF3C32C9381E8001BD3CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				458BF3C12C9381E8001BD3CA /* telemetry-control-client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		458BF3C02C9381E8001BD3CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				458BF3CD2C9381E9001BD3CA /* Preview Assets.xcassets in Resources */,
+				4559047D2CBE75BD0032C3CA /* AJ_IIIv5_skid+TSS.scn in Resources */,
+				458BF3CA2C9381E9001BD3CA /* Assets.xcassets in Resources */,
+				45140E822CAFDF75004D0DEE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		458BF3BE2C9381E8001BD3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454388E42CAB1A720057458C /* gRPCService.swift in Sources */,
+				4512BAB02CBAD76700F088A8 /* telemetry.pb.swift in Sources */,
+				4512BAB12CBAD76700F088A8 /* telemetry.grpc.swift in Sources */,
+				45140E712CAFD677004D0DEE /* DetailView.swift in Sources */,
+				45140E6B2CAFD525004D0DEE /* SignInWithAppleView.swift in Sources */,
+				45140E752CAFD68B004D0DEE /* SubscriptionView.swift in Sources */,
+				458BF3E72C93828F001BD3CA /* telemetry.proto in Sources */,
+				4559048B2CC025060032C3CA /* Alarms.swift in Sources */,
+				455904822CC020FB0032C3CA /* NotificationDelegate.swift in Sources */,
+				455904842CC0249C0032C3CA /* Alarm.swift in Sources */,
+				45140E6F2CAFD617004D0DEE /* MainContentView.swift in Sources */,
+				45140E6D2CAFD595004D0DEE /* UserManager.swift in Sources */,
+				4512BACB2CBB101E00F088A8 /* controller.swift in Sources */,
+				45140E912CAFE266004D0DEE /* AuthenticationView.swift in Sources */,
+				45140E732CAFD683004D0DEE /* ProfileView.swift in Sources */,
+				455904902CC027570032C3CA /* AlarmModel.xcdatamodeld in Sources */,
+				455904802CC020DF0032C3CA /* NotificationManager.swift in Sources */,
+				458BF3C62C9381E8001BD3CA /* telemetry_control_clientApp.swift in Sources */,
+				4512BB1E2CBD765500F088A8 /* AssoJetView.swift in Sources */,
+				455904872CC024BD0032C3CA /* AlarmManager.swift in Sources */,
+				4559048D2CC026CE0032C3CA /* PersistenceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		458BF3CF2C9381E9001BD3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		458BF3D02C9381E9001BD3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		458BF3D22C9381E9001BD3CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "telemetry-control-client/telemetry_control_client.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"telemetry-control-client/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 228UW5Q2TT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nikolaoschionakis.telemetry-control-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		458BF3D32C9381E9001BD3CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "telemetry-control-client/telemetry_control_client.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"telemetry-control-client/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = 228UW5Q2TT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nikolaoschionakis.telemetry-control-client";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		458BF3BD2C9381E8001BD3CA /* Build configuration list for PBXProject "telemetry-control-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458BF3CF2C9381E9001BD3CA /* Debug */,
+				458BF3D02C9381E9001BD3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		458BF3D12C9381E9001BD3CA /* Build configuration list for PBXNativeTarget "telemetry-control-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				458BF3D22C9381E9001BD3CA /* Debug */,
+				458BF3D32C9381E9001BD3CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		458BF3D42C938223001BD3CA /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.28.1;
+			};
+		};
+		458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/grpc/grpc-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.23.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		458BF3D52C938223001BD3CA /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3D42C938223001BD3CA /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		458BF3D72C938223001BD3CA /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3D42C938223001BD3CA /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		458BF3D92C938223001BD3CA /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3D42C938223001BD3CA /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+		458BF3DC2C938272001BD3CA /* CGRPCZlib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = CGRPCZlib;
+		};
+		458BF3DE2C938272001BD3CA /* GRPC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPC;
+		};
+		458BF3E02C938272001BD3CA /* GRPCReflectionService */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = GRPCReflectionService;
+		};
+		458BF3E22C938272001BD3CA /* _GRPCCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = _GRPCCore;
+		};
+		458BF3E42C938272001BD3CA /* protoc-gen-grpc-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 458BF3DB2C938272001BD3CA /* XCRemoteSwiftPackageReference "grpc-swift" */;
+			productName = "protoc-gen-grpc-swift";
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4559048E2CC027570032C3CA /* AlarmModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4559048F2CC027570032C3CA /* AlarmModel.xcdatamodel */,
+			);
+			currentVersion = 4559048F2CC027570032C3CA /* AlarmModel.xcdatamodel */;
+			path = AlarmModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 458BF3BA2C9381E8001BD3CA /* Project object */;
+}

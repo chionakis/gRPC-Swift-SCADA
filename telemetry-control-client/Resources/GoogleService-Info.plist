@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAtEpzI0wJnUdXDXbFt5K2LOGqDEsuL14I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>317712652977</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nikolaoschionakis.telemetry-control-client</string>
+	<key>PROJECT_ID</key>
+	<string>chionakis-hmi</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chionakis-hmi.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:317712652977:ios:ce7c4e446aeb7149746090</string>
+</dict>
+</plist>

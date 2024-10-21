@@ -1,0 +1,98 @@
+syntax = "proto3";
+
+package telemetry;
+
+option go_package = "proto/telemetry";
+
+service TelemetryControlService {
+  rpc Read (TagRequest) returns (MultiTagResponse);
+  rpc Subscribe (TagRequest) returns (stream TagResponse);
+  rpc Write (WriteTagRequest) returns (WriteTagResponse);
+  rpc ReadHistory(HistoryReadTagRequest) returns (stream HistoryReadTagResponse);
+  rpc SubscribeEvents (TagRequest) returns (stream EventResponse);
+  rpc SubscribeAlarms (TagRequest) returns (stream AlarmResponse);  // New method for subscribing to alarms
+  rpc AcknowledgeAlarm (AcknowledgeAlarmRequest) returns (AcknowledgeAlarmResponse);  // New method for acknowledging alarms
+}
+
+message TagRequest {
+  repeated string tagNames = 1;
+  string opcEndpoint = 2;
+}
+
+message MultiTagResponse {
+  repeated TagResponse tagResponses = 1;
+}
+
+message WriteTagRequest {
+  repeated string tagNames = 1;  // List of tag names to write to
+  repeated string values = 2;    // Corresponding values for each tag
+  string opcEndpoint = 3;  // OPC UA endpoint
+}
+
+message TagResponse {
+  string tagName = 1;
+  string value = 2;
+  string timestamp = 3;
+}
+
+message WriteTagResponse {
+  bool success = 1; // Indicates whether the write operation was successful
+  string message = 2; // Message indicating success or error
+}
+
+message HistoryReadTagRequest {
+  string opcEndpoint = 1;  // OPC UA server endpoint
+  repeated string tagNames = 2;      // Tag to read historical data for
+  string startTime = 3;    // Start time in RFC3339 format
+  string endTime = 4;      // End time in RFC3339 format
+  int32 maxValues = 5;     // Maximum number of values to read
+}
+
+// Response for historical data
+message HistoryReadTagResponse {
+  string tagName = 1;
+  string value = 2;
+  string timestamp = 3;
+}
+
+message EventResponse {
+  string eventId = 1;      // Unique identifier of the event
+  string message = 2;       // Event message or description
+  int32 severity = 3;       // Event severity level (e.g., alarms, notifications)
+  string sourceName = 4;   // Name of the source that triggered the event
+  string timestamp = 5;     // Timestamp of the event (in RFC3339 format)
+}
+
+// New message for alarm subscription response
+message AlarmResponse {
+  string eventId = 1;
+  string message = 2;
+  int32 severity = 3;
+  string sourceName = 4;
+  bool activeState = 5;
+  bool ackedState = 6;
+  bool confirmedState = 7;
+  string timestamp = 8;
+}
+
+// New message for alarm acknowledgment request
+message AcknowledgeAlarmRequest {
+  repeated string objectIds = 1;  // List of Object IDs to acknowledge
+  repeated string eventIds = 2;   // List of Event IDs to acknowledge
+  string comment = 3;             // Optional comment to accompany the acknowledgment
+}
+
+// New message for alarm acknowledgment response
+message AcknowledgeAlarmResponse {
+  repeated AlarmAcknowledgeResult results = 1;  // Results for each acknowledged alarm
+}
+
+// New message for the result of acknowledging alarms
+message AlarmAcknowledgeResult {
+  string objectId = 1;
+  string eventId = 2;
+  bool success = 3;
+  string message = 4;
+}
+
+
